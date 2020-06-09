@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>inittableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>({
+    let obj = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    obj.separatorStyle = UITableViewCellSeparatorStyleNone;
+    obj.backgroundColor = [UIColor clearColor];
+    obj.estimatedRowHeight = 0;
+    obj.estimatedSectionFooterHeight = 0;
+    obj.estimatedSectionHeaderHeight = 0;
+    obj.showsVerticalScrollIndicator = NO;
+    obj.showsHorizontalScrollIndicator = NO;
+    [obj hb_configTableView:^(HBTableViewProtoFactory *config) {
+        NSDictionary&lt;NSString *, NSDictionary *&gt; *dict = [self cellTypeDict];
+        [dict enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSDictionary * _Nonnull obj, BOOL * _Nonnull stop) {
+            config.cell(obj[@"cellType"]).cls(obj[@"cellName"]);
+        }];
+    }];
+    [obj hb_setup:^(HBTableViewMaker *maker) {
+        maker.section(@"Content");
+    }];
+    _tableView;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E9A59372-61FF-46B8-8035-563C666D7C7D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init UITableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

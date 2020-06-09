@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>inittopscrollview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>({
+    let obj = [[XRTopScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.f)];
+    obj.backgroundColor = [UIColor hb_colorWithHex:0xFFFFFF];
+    obj.showsHorizontalScrollIndicator = NO;
+    obj.showsVerticalScrollIndicator = NO;
+    obj.delegate = self;
+    obj.bounces = YES;
+    obj.scrollsToTop = NO;
+    obj.titleFont = [UIFont systemFontOfSize:14];
+    obj.normalColor = [UIColor hb_colorWithHex:0x333333];
+    obj.selectedTextColor = [UIColor hb_colorWithHex:0xFF1940];
+    obj.hiddenLine = NO;
+    obj;
+});</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A76FE350-5507-4BE3-AEE7-EC33E38CB6C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init TopScrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

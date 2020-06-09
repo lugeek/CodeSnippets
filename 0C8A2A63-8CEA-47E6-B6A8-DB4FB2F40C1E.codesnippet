@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>({
+    let obj = [UITextField new];
+    NSString *holderText = @"请输入";
+    NSMutableAttributedString *placeholder = [[NSMutableAttributedString alloc] initWithString:holderText];
+    [placeholder addAttribute:NSForegroundColorAttributeName
+                        value:[UIColor hb_colorWithHex:0x999999]
+                        range:NSMakeRange(0,holderText.length)];
+    [placeholder addAttribute:NSFontAttributeName
+                        value:[UIFont systemFontOfSize:14]
+                        range:NSMakeRange(0, holderText.length)];
+    obj.attributedPlaceholder = placeholder;
+    obj.clearButtonMode = UITextFieldViewModeNever;
+    obj.backgroundColor = [UIColor hb_colorWithHex:0xF2F4F6];
+    obj.textColor = [UIColor hb_colorWithHex:0x333333];
+    obj.font = [UIFont systemFontOfSize:14];
+    obj.layer.cornerRadius = 4;
+    obj.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    obj.leftViewMode = UITextFieldViewModeAlways;
+    obj.keyboardType = UIKeyboardTypeNumberPad;
+    [obj addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    obj;
+})</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0C8A2A63-8CEA-47E6-B6A8-DB4FB2F40C1E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Init UITextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
